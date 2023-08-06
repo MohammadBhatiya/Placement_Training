@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form in FSD</title>
+    <style>
+        *{
+            box-sizing:border-box;
+        }
+        body {
+            margin:0;
+        }
+        .form {
+            height:100vh;
+            display:flex;
+            flex-direction:column;
+            justify-content:center;
+        }
+
+        form {
+            width:30%;
+            margin:auto;
+            text-align:center
+        }
+        input{
+            margin-top:1rem;
+            width:15rem;
+            border:none;
+            border-bottom:1px solid grey;
+            padding:0.5rem 0;
+        }
+        input:focus-visible {
+            outline:none
+        }
+
+        input:focus {
+            border-bottom:1px solid black
+        }
+
+        .form_button{
+            background:black;
+            color:white;
+            padding: 0.5rem 1rem;
+            border: 1px solid black;
+            text-decoration:none;
+            border-radius:12px;
+        }
+        .form_button:hover {
+            color:black;
+            background:white;
+            cursor:pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="form">
+            <form action="second.html" method="post" >
+                <p>UserName: <br> <input type="text" name="username" placeholder="Enter your name" required></p>
+                <p>Password: <br> <input type="password" name="password" placeholder="Enter your password" required></p><br><br>
+                <a href="second.html" target="_blank" class="form_button">Submit</a>
+            </form>
+        
+        
+    </div>
+</body>
+</html>
